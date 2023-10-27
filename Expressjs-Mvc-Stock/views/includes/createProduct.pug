@@ -1,0 +1,10 @@
+mixin createProduct(urun)
+        .col-md-4
+            .card.mb-3     
+                .card-header.text-center
+                    h5.card-title #{urun.Name}
+                    img.card-img-top(src=`${urun.ImageUrl}` alt=`${urun.Name}` width="200px")
+                .card-body.text-center
+                    p.card-text Fiyat : #{urun.Price}
+                .card-footer.text-end
+                    a.btn.btn-primary(href='/products/detail/' + urun.Id) ürün detay

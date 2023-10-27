@@ -1,0 +1,9 @@
+extends layout
+
+include includes/createProduct
+
+block content
+    h1 Product List
+    .row        
+        each urun in products
+            +createProduct(urun)

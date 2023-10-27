@@ -1,0 +1,16 @@
+extends layout
+block content
+    h2 Ürün Ekle
+    .col-md-4
+        form(asp-action='addProduct' method='post')
+            .form-group
+            label.control-label Name
+            input.form-control(name='Name')
+            .form-group
+            label.control-label Price
+            input.form-control(name='Price')
+            .form-group
+            label.control-label Image
+            input.form-control(name='ImageUrl')
+            .form-group
+            input.btn.btn-primary.mt-3(type='submit' value='Create')
